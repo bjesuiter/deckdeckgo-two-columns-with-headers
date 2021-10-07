@@ -11,8 +11,10 @@ import {
 } from '@deckdeckgo/slide-utils';
 
 /**
- * @slot title - An example of a custom slot
- * @slot content - Another example of a custom slot with a restricted list of usage - h1,h2,h3,section
+ * @slot titleA - Block A Title - h1,h2,h3,section
+ * @slot contentA - Block A Content
+ * @slot titleB - Block B Title - h1,h2,h3,section
+ * @slot contentB - Block A Content
  */
 @Component({
   tag: 'two-columns-with-headers',

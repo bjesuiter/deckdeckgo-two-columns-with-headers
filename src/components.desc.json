@@ -7,6 +7,14 @@
     },
     "slots": [
       {
+        "name": "contentA",
+        "placeholder": "Block A Content"
+      },
+      {
+        "name": "contentB",
+        "placeholder": "Block A Content"
+      },
+      {
         "name": "titleA",
         "placeholder": "Block A Title",
         "types": [
@@ -25,14 +33,6 @@
           "h3",
           "section"
         ]
-      },
-      {
-        "name": "contentA",
-        "placeholder": "Block A Content"
-      },
-      {
-        "name": "contentB",
-        "placeholder": "Block B Content"
       }
     ]
   }
