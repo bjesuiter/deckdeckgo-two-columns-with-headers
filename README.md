@@ -10,3 +10,7 @@ https://unpkg.com/jb-deckdeckgo-two-columns-with-headers@1.0.0-rc.1/
 ## License
 
 MIT © [Benjamin Jesuiter](mailto:bjesuiter@gmail.com)
+
+## Dev Notes
+
+- The StencilJS Namespace will be used as esm module filename, so it should be the same as the package-name to avoid confusion
