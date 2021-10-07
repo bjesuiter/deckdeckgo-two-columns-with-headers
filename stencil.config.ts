@@ -9,7 +9,7 @@ import autoprefixer from 'autoprefixer';
 import {generateDesc} from './deckdeckgo.desc';
 
 export const config: Config = {
-  namespace: 'two-columns-with-headers',
+  namespace: 'jb-deckdeckgo',
   outputTargets: [
     {
       type: 'dist'

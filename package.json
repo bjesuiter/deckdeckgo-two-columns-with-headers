@@ -1,5 +1,5 @@
 {
-  "name": "two-columns-with-headers",
+  "name": "jb-deckdeckgo-two-columns-with-headers",
   "version": "1.0.0-rc.1",
   "description": "Starter to create a template for DeckDeckGo presentations",
   "main": "dist/index.cjs.js",
