@@ -1,8 +1,10 @@
 [
   {
     "tag": "two-columns-with-headers",
-    "props": [
-    ],
+    "author": {
+      "name": "Benjamin Jesuiter",
+      "url": "https://github.com/bjesuiter"
+    },
     "slots": [
       {
         "name": "titleA",
