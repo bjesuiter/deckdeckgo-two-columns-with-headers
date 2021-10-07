@@ -7,7 +7,7 @@ import {
   beforeSwipe,
   lazyLoadContent,
   hideAllRevealElements,
-  showAllRevealElements,
+  showAllRevealElements
 } from '@deckdeckgo/slide-utils';
 
 /**
@@ -15,9 +15,9 @@ import {
  * @slot content - Another example of a custom slot with a restricted list of usage - h1,h2,h3,section
  */
 @Component({
-  tag: 'my-template',
-  styleUrl: 'my-template.scss',
-  shadow: true,
+  tag: 'two-columns-with-headers',
+  styleUrl: 'two-columns-with-headers.scss',
+  shadow: true
 })
 export class MyTemplate implements DeckdeckgoSlide {
   @Element() private el: HTMLElement;
@@ -89,12 +89,14 @@ export class MyTemplate implements DeckdeckgoSlide {
    * - actions: can be use to add an action on the top right corner of a slide (optional)
    */
   private renderDeckSlots() {
-    return <Fragment>
-      <slot name="notes"></slot>
-      <slot name="header"></slot>
-      <slot name="footer"></slot>
-      <slot name="background"></slot>
-      <slot name="actions"></slot>
-    </Fragment>
+    return (
+      <Fragment>
+        <slot name="notes"></slot>
+        <slot name="header"></slot>
+        <slot name="footer"></slot>
+        <slot name="background"></slot>
+        <slot name="actions"></slot>
+      </Fragment>
+    );
   }
 }

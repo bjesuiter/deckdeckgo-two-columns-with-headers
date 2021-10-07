@@ -6,7 +6,7 @@
  */
 import { HTMLStencilElement, JSXBase } from "@stencil/core/internal";
 export namespace Components {
-    interface MyTemplate {
+    interface TwoColumnsWithHeaders {
         "afterSwipe": () => Promise<void>;
         "beforeSwipe": (enter: boolean, reveal: boolean) => Promise<boolean>;
         "hideContent": () => Promise<void>;
@@ -19,18 +19,18 @@ export namespace Components {
     }
 }
 declare global {
-    interface HTMLMyTemplateElement extends Components.MyTemplate, HTMLStencilElement {
+    interface HTMLTwoColumnsWithHeadersElement extends Components.TwoColumnsWithHeaders, HTMLStencilElement {
     }
-    var HTMLMyTemplateElement: {
-        prototype: HTMLMyTemplateElement;
-        new (): HTMLMyTemplateElement;
+    var HTMLTwoColumnsWithHeadersElement: {
+        prototype: HTMLTwoColumnsWithHeadersElement;
+        new (): HTMLTwoColumnsWithHeadersElement;
     };
     interface HTMLElementTagNameMap {
-        "my-template": HTMLMyTemplateElement;
+        "two-columns-with-headers": HTMLTwoColumnsWithHeadersElement;
     }
 }
 declare namespace LocalJSX {
-    interface MyTemplate {
+    interface TwoColumnsWithHeaders {
         "onSlideDidLoad"?: (event: CustomEvent<void>) => void;
         /**
           * An example of a custom property
@@ -38,14 +38,14 @@ declare namespace LocalJSX {
         "value"?: string;
     }
     interface IntrinsicElements {
-        "my-template": MyTemplate;
+        "two-columns-with-headers": TwoColumnsWithHeaders;
     }
 }
 export { LocalJSX as JSX };
 declare module "@stencil/core" {
     export namespace JSX {
         interface IntrinsicElements {
-            "my-template": LocalJSX.MyTemplate & JSXBase.HTMLAttributes<HTMLMyTemplateElement>;
+            "two-columns-with-headers": LocalJSX.TwoColumnsWithHeaders & JSXBase.HTMLAttributes<HTMLTwoColumnsWithHeadersElement>;
         }
     }
 }
