@@ -1,17 +1,12 @@
 [
   {
-    "tag": "my-template",
+    "tag": "two-columns-with-headers",
     "props": [
-      {
-        "name": "value",
-        "type": "string",
-        "placeholder": "An example of a custom property"
-      }
     ],
     "slots": [
       {
-        "name": "content",
-        "placeholder": "Another example of a custom slot with a restricted list of usage",
+        "name": "titleA",
+        "placeholder": "Block A Title",
         "types": [
           "h1",
           "h2",
@@ -20,8 +15,22 @@
         ]
       },
       {
-        "name": "title",
-        "placeholder": "An example of a custom slot"
+        "name": "titleB",
+        "placeholder": "Block B Title",
+        "types": [
+          "h1",
+          "h2",
+          "h3",
+          "section"
+        ]
+      },
+      {
+        "name": "contentA",
+        "placeholder": "Block A Content"
+      },
+      {
+        "name": "contentB",
+        "placeholder": "Block B Content"
       }
     ]
   }
