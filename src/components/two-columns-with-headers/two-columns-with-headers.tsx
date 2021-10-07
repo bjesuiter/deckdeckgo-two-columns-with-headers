@@ -67,10 +67,10 @@ export class TwoColumnsWithHeaders implements DeckdeckgoSlide {
         <div class="deckgo-slide">
           <div class="deckgo-aspect-ratio-container">
             <div class="deckgo-aspect-ratio-content">
-              <slot name="titleStart"></slot>
-              <slot name="contentStart"></slot>
-              <slot name="titleEnd"></slot>
-              <slot name="contentEnd"></slot>
+              <slot name="titleA"></slot>
+              <slot name="contentA"></slot>
+              <slot name="titleB"></slot>
+              <slot name="contentB"></slot>
             </div>
           </div>
 

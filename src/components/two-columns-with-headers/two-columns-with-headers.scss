@@ -30,18 +30,49 @@ div.deckgo-aspect-ratio-container {
     );
 
     /* Your template style here after */
+    /* My custom Template styles */
 
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 10% auto;
+    grid-template-areas:
+      "title-a title-b"
+      "content-a content-b";
+    grid-gap: 2em;
+    justify-items: left;
+    align-items: start;
 
     background: var(--background, lightgray);
+
+    // For debugging
+    // border: solid red;
   }
 }
 
-::slotted([slot="title"]),
-::slotted([slot="content"]) {
-  text-align: center;
+::slotted([slot="titleA"]) {
+  grid-area: title-a;
+}
+
+::slotted([slot="titleB"]) {
+  grid-area: title-b;
+}
+
+::slotted([slot="contentA"]) {
+  grid-area: content-a;
+}
+
+::slotted([slot="contentB"]) {
+  grid-area: content-b;
+}
+
+::slotted([slot="titleA"]),
+::slotted([slot="contentA"]) {
+  text-align: right;
+  user-select: text;
+}
+
+::slotted([slot="titleB"]),
+::slotted([slot="contentB"]) {
+  text-align: left;
   user-select: text;
 }
