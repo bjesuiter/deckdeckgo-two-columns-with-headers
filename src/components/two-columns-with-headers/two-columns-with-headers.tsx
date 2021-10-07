@@ -19,7 +19,7 @@ import {
   styleUrl: 'two-columns-with-headers.scss',
   shadow: true
 })
-export class MyTemplate implements DeckdeckgoSlide {
+export class TwoColumnsWithHeaders implements DeckdeckgoSlide {
   @Element() private el: HTMLElement;
 
   @Event() private slideDidLoad: EventEmitter<void>;
@@ -27,8 +27,8 @@ export class MyTemplate implements DeckdeckgoSlide {
   /**
    * An example of a custom property
    */
-  @Prop({reflect: true})
-  value: string;
+  // @Prop({reflect: true})
+  // value: string;
 
   async componentDidLoad() {
     await hideLazyLoadImages(this.el);
@@ -67,9 +67,10 @@ export class MyTemplate implements DeckdeckgoSlide {
         <div class="deckgo-slide">
           <div class="deckgo-aspect-ratio-container">
             <div class="deckgo-aspect-ratio-content">
-              <slot name="title"></slot>
-              <slot name="content"></slot>
-              <p>An example of property: {this.value}</p>
+              <slot name="titleStart"></slot>
+              <slot name="contentStart"></slot>
+              <slot name="titleEnd"></slot>
+              <slot name="contentEnd"></slot>
             </div>
           </div>
 
