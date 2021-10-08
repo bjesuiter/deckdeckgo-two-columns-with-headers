@@ -3,9 +3,15 @@
 A deckdeckgo slide template with two headers and two columns of content,
 to be able to make useful comparison slides
 
-## Unpkg url (change version if needed)
+## Unpkg urls
 
-https://unpkg.com/jb-deckdeckgo-two-columns-with-headers@1.0.0-rc.1/
+change 'latest' to a specific version if you need to import an older version in deckdeckgo-studio
+
+https://unpkg.com/jb-deckdeckgo-two-columns-with-headers@latest
+
+Importing the latest slide-template in deckdeckgo:
+
+https://unpkg.com/browse/jb-deckdeckgo-two-columns-with-headers@latest/dist/jb-deckdeckgo-two-columns-with-headers/jb-deckdeckgo-two-columns-with-headers.esm.js
 
 ## License
 
