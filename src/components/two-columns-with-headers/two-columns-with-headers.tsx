@@ -14,7 +14,7 @@ import {
  * @slot titleA - Block A Title - h1,h2,h3,section
  * @slot contentA - Block A Content
  * @slot titleB - Block B Title - h1,h2,h3,section
- * @slot contentB - Block A Content
+ * @slot contentB - Block B Content
  */
 @Component({
   tag: 'two-columns-with-headers',
